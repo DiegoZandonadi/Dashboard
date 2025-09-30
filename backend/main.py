@@ -8,7 +8,11 @@ from datetime import datetime
 import random
 from data_generator import DataGenerator
 
-app = FastAPI(title="Dashboard API", version="1.0.0")
+app = FastAPI(
+    title="Dashboard API", 
+    version="1.0.0",
+    description="API de Dashboard com Análise de Dados em Tempo Real"
+)
 
 # Configurar CORS
 app.add_middleware(
