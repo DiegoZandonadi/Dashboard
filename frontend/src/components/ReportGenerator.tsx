@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FileText, Download, Calendar, Settings } from 'lucide-react'
+import { FileText, Download, Settings } from 'lucide-react'
 import { generateReport } from '../services/api'
 
 const ReportGenerator = () => {

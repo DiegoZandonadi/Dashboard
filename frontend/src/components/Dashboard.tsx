@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Users, DollarSign, TrendingUp, Activity, Zap, Clock } from 'lucide-react'
+import { Users, DollarSign, TrendingUp, Activity, Zap } from 'lucide-react'
 import MetricCard from './MetricCard'
 import SalesChart from './charts/SalesChart'
 import TrafficChart from './charts/TrafficChart'
