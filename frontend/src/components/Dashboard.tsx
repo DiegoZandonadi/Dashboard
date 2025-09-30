@@ -24,7 +24,7 @@ const Dashboard = () => {
   const [performanceData, setPerformanceData] = useState<PerformanceData[]>([])
   const [loading, setLoading] = useState(true)
 
-  const { data: realtimeData, isConnected } = useWebSocket('ws://localhost:8000/ws/realtime')
+  const { data: realtimeData, isConnected } = useWebSocket()
 
   useEffect(() => {
     loadDashboardData()
