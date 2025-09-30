@@ -13,7 +13,7 @@ app = FastAPI(title="Dashboard API", version="1.0.0")
 # Configurar CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"],
+    allow_origins=["*"],  # Permitir todas as origens (produção)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
