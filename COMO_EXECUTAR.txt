@@ -1,0 +1,119 @@
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║         🚀 DASHBOARD INTERATIVO - GUIA DE EXECUÇÃO            ║
+║            Análise de Dados em Tempo Real                      ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════
+  OPÇÃO 1: EXECUÇÃO AUTOMÁTICA (RECOMENDADO) ⭐
+═══════════════════════════════════════════════════════════════════
+
+1. Abra o PowerShell ou CMD
+2. Navegue até a pasta do projeto:
+   cd C:\Users\zando\Documents\Dashboard
+
+3. Execute o script:
+   scripts\start-all.bat
+
+4. Aguarde as janelas abrirem (backend e frontend)
+5. Acesse: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════════
+  OPÇÃO 2: EXECUÇÃO MANUAL
+═══════════════════════════════════════════════════════════════════
+
+▶ PASSO 1: BACKEND (Terminal 1)
+────────────────────────────────────────────────────────────────
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
+
+✅ Backend rodando em: http://localhost:8000
+
+▶ PASSO 2: FRONTEND (Terminal 2 - Novo terminal)
+────────────────────────────────────────────────────────────────
+cd frontend
+npm install
+npm run dev
+
+✅ Frontend rodando em: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════════
+  O QUE ESPERAR?
+═══════════════════════════════════════════════════════════════════
+
+✅ Backend iniciará na porta 8000
+✅ Frontend iniciará na porta 3000
+✅ WebSocket conectará automaticamente
+✅ Dados em tempo real começarão a fluir
+
+═══════════════════════════════════════════════════════════════════
+  FUNCIONALIDADES DISPONÍVEIS
+═══════════════════════════════════════════════════════════════════
+
+📊 DASHBOARD
+  • Cards com métricas principais
+  • Gráfico de vendas e lucro (30 dias)
+  • Gráfico de tráfego por hora
+  • Gráfico de performance do sistema
+  • Métricas em tempo real via WebSocket
+  • Feed de vendas recentes
+
+📄 RELATÓRIOS
+  • Geração de relatórios personalizados
+  • Seleção de múltiplas métricas
+  • Escolha de período
+  • Download em JSON
+
+═══════════════════════════════════════════════════════════════════
+  VERIFICAR SE ESTÁ FUNCIONANDO
+═══════════════════════════════════════════════════════════════════
+
+1. Backend: http://localhost:8000
+   Deve mostrar: {"message": "Dashboard API está funcionando!", ...}
+
+2. API Docs: http://localhost:8000/docs
+   Interface Swagger com todos os endpoints
+
+3. Frontend: http://localhost:3000
+   Dashboard completo com gráficos
+
+4. WebSocket: Indicador verde no topo do dashboard
+
+═══════════════════════════════════════════════════════════════════
+  PROBLEMAS COMUNS
+═══════════════════════════════════════════════════════════════════
+
+❌ "python não é reconhecido"
+   → Instale Python 3.8+ de python.org
+
+❌ "npm não é reconhecido"
+   → Instale Node.js de nodejs.org
+
+❌ Porta 8000 já em uso
+   → Feche outros processos ou altere a porta em main.py
+
+❌ Porta 3000 já em uso
+   → Feche outros processos ou aceite a porta alternativa
+
+═══════════════════════════════════════════════════════════════════
+  PARAR OS SERVIDORES
+═══════════════════════════════════════════════════════════════════
+
+• Pressione Ctrl + C em cada terminal
+• Ou feche as janelas do terminal
+
+═══════════════════════════════════════════════════════════════════
+  MAIS INFORMAÇÕES
+═══════════════════════════════════════════════════════════════════
+
+📚 README.md - Documentação completa
+🚀 QUICK_START.md - Guia de início rápido
+📁 PROJECT_STRUCTURE.md - Estrutura do projeto
+
+═══════════════════════════════════════════════════════════════════
+
+Desenvolvido com ❤️ usando React, TypeScript e Python
