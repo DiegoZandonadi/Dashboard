@@ -22,7 +22,7 @@ export interface RealtimeData {
   recentSales: RecentSale[]
 }
 
-export const useWebSocket = (url: string = 'wss://dashboard-rwtm.onrender.com/ws/realtime') => {
+export const useWebSocket = (url: string = 'wss://dashboard-zwtm.onrender.com/ws/realtime') => {
   const [data, setData] = useState<RealtimeData | null>(null)
   const [isConnected, setIsConnected] = useState(false)
   const [error, setError] = useState<string | null>(null)
